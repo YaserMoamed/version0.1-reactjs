@@ -1,6 +1,5 @@
 import React from 'react';
-import '../assets/scss/pages/_login.scss'
-
+import {Link} from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -11,7 +10,7 @@ const Login = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-5 col-sm-12 col-xs-10 left-col">
                         <div className="left-login">
-                            <img src={require('../assets/img/logo.PNG')} />
+                            <img src={require('../assets/img/logo.PNG')} alt="logo" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-7 col-sm-12 col-xs-10">
@@ -34,8 +33,9 @@ const Login = () => {
                             </form>
                             <div className="part3">
                                 <span>New in Scratch?</span><br/>
-                                <a>Create Account Here</a>
+                                <Link to="signup">Create Account Here</Link>
                             </div>
+                            <a className="forgot-password">Forgot password?</a>
                         </div>
                     </div>
                 </div>
