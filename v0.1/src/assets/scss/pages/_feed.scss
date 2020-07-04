@@ -1,0 +1,88 @@
+.feed-body{
+    padding:50px;
+    @include for-phone-only { padding:5px; };
+    @include for-above-phone-only { padding:10px; };
+    @include for-tablet-portrait-up { padding:15px; };
+    @include for-tablet-landscape-up { padding:30px; };
+
+    .top5{
+        padding: 7%;
+        background-color: #fff;
+        font-family: $Font;
+        .heading{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #030F09;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            font-size: 14px;
+            line-height: 22px;
+            color: #606060;
+            padding-top: 10px;
+        }
+    }
+    .onlineInfo{
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 22px 25px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include for-phone-only { flex-direction: column; };
+
+        span{
+            font-size: 14px;
+            line-height: 22px;
+            color: #030F09;
+        }
+        button{
+            background: $green;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            font-family: $Font;
+            padding: 5px 13px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            @include for-phone-only { margin-top: 10px; };
+        }
+    }
+    .posts{
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 2%;
+    }
+    .moreinfo{
+        padding: 7%;
+        background-color: #fff;
+        .links{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            a{
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.4px;
+                color: #767676;
+            }
+        }
+        span{
+            font-size: 10px;
+            line-height: 14px;
+            letter-spacing: 0.333333px;
+            color: #767676;
+        }
+        
+
+    }
+}
