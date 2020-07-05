@@ -1,0 +1,80 @@
+@import '../../../assets/scss/variable.scss';
+
+.card{
+    font-family: $Font;
+    padding: 18px;
+    background: #fff;
+    // max-width: 335px;
+    // min-width: 320px;
+    border-radius: 8px;
+    .card-upper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .userImage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 100%;
+                border-radius: 34px;
+                max-height: 68px;
+            }
+            
+            
+        }
+        .userInfo{
+            
+            @include customInterval(768px,893px){text-align:center;}
+            @include customInterval(992px,1221px){text-align:center;}
+            .name{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: #030F09;
+                margin-bottom: 0;
+            }
+            .title{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #606060;
+                margin-bottom: 1px;
+            }
+            span{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #606060;
+            }
+            .dot{
+                color:#979797;
+                margin: 0px 5px;
+            }
+        }
+    }
+    
+    .stats{
+        .col-4{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .count{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            color: #030F09;
+            margin-bottom: -5px;
+        }
+        .field{
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+            color: #030F09;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            margin-bottom: -6px;
+        }
+    }
+}

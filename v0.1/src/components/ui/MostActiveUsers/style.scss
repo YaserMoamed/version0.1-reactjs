@@ -1,0 +1,24 @@
+@import '../../../assets/scss/variable.scss';
+
+.mostActive{
+    font-family: $Font;
+    padding: 7%;
+    background-color: #fff;
+    border-radius: 8px;
+    .heading{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #030F09;
+        margin-bottom: 15px;
+    }
+    .allusers{
+        display: flex;
+        justify-content: space-between;
+        .user{
+            max-width: 100%;
+            height: 30px;
+            border-radius: 15px;
+        }
+    }
+}

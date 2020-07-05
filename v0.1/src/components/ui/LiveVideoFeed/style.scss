@@ -1,0 +1,20 @@
+@import '../../../assets/scss/variable.scss';
+
+.live-video-feed{
+    font-family: $Font;
+    padding: 7%;
+    background-color: #fff;
+    border-radius: 8px;
+    .heading{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #030F09;
+    }
+    .vid{
+        padding-top: 18px;
+        video{
+            max-width: 100%;
+        }
+    }
+}

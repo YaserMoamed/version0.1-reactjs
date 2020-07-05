@@ -1,0 +1,93 @@
+@import '../../../assets/scss/variable.scss';
+
+.follow-suggestion{
+    font-family: $Font;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1%;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @include custom('410px'){ place-content: center;}
+        margin-bottom: 10px;
+        p{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #030F09;
+            margin: 0;
+            
+        }
+        a{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.32px;
+            color: #30BE76;
+        }
+        
+    }
+    .cards-fs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .card-fs{
+            border-radius: 8px;
+            max-width: 32%;
+            .bg-image{
+                position: relative;
+                justify-content: center;
+                display: flex;
+                img{
+                    max-width: 100%;
+                }
+                .userImage{
+                    position: absolute;
+                    bottom: -25px;
+                    img{
+                        max-height: 70px;
+                        border: 5px solid #fff;
+                        border-radius: 40px;
+                        max-width: 100%;
+                    }
+                    
+                }
+            }
+            .body{
+                padding:23px 11%;
+                .name{
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #030F09;
+                    
+                }
+                .stats{
+                    display: flex;
+                    justify-content: space-between;
+                    @include custom('350px'){ flex-direction: column;}
+                    .count{
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: #030F09;
+                        margin-bottom: 0;
+                    }
+                    .field{
+                        font-size: 10px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: #030F09;
+                        mix-blend-mode: normal;
+                        opacity: 0.6;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}

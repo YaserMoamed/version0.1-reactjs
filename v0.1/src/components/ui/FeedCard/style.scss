@@ -1,0 +1,186 @@
+@import '../../../assets/scss/variable.scss';
+
+.feed-card{
+    position: relative;
+    background-color: #fff;
+    font-family: $Font;
+    padding-bottom: 10px;
+    .saveTo{
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        background: #00000040;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        
+        .box{
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 254px;
+
+            .link{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.32px;
+                color: #30BE76;
+            }
+            .options{
+                font-size: 14px;
+                line-height: 22px;
+                color: #030F09;
+                padding: 10px 4px;
+                border: none;
+                background-color: #fff;
+                width: 100%;
+                text-align: left; 
+            }
+            .options:onClick{
+                background: #30BE76;
+                mix-blend-mode: normal;
+            }
+            
+            .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                p{
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin-bottom: 0px;
+                    color: #030F09;
+                }
+                .cross1{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: 1px solid #929794;
+                    transform: rotate(-45deg);
+                    width: 15px;
+                    height: 2px;
+                }
+                .cross2{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: 1px solid #929794;
+                    transform: rotate(45deg);
+                    width: 15px;
+                    height: 2px;
+                }
+                button{
+                    border: none;
+                    background: none;
+                    position: relative;
+                }
+            }
+            
+        }
+    }
+    .card-img{
+        background: url('../../../assets/img/postImage.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 49%;
+        .card-header{
+            position: relative;
+            top: 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.95;
+            img{
+                border-radius: 25px;
+                height: 50px;
+                max-width: 100%;
+            }
+    
+            .creatorInfo{
+                margin-left: 10px;
+                .name{
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #030F09;
+                    margin-bottom: 0px;
+                }
+                .time{
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.4px;
+                    color: #767676;
+                    margin-bottom: 0px;
+                }
+            }
+    
+        }
+    }
+    .card-body{
+        padding: 15px 5%;
+        .post-title{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+
+            p{
+                margin-bottom: 0px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 32px;
+                color: #030F09;
+            }
+            span{
+                font-size: 21px;
+                color: #363837;
+                font-weight: lighter;
+            }
+        }
+        .content{
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #A8A8A8;
+        }
+        
+    }
+    .card-footer{
+        border: none;
+        background-color: #fff;
+        padding: 10px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .dot{
+            color:#979797;
+            margin: 0px 5px;
+        }
+        button{
+            padding: 4px 12px;
+            background: #fff;
+            color: #30be76;
+            border: 1px solid #30be76;
+            border-radius: 4px;
+
+            span{
+                margin-right: 8px;
+                font-size: 1em;
+            }
+        }
+    }
+    
+}
