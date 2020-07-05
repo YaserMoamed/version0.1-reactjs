@@ -26,6 +26,7 @@
         .userInfo{
             
             @include customInterval(768px,893px){text-align:center;}
+            @include customInterval(992px,1221px){text-align:center;}
             .name{
                 font-weight: bold;
                 font-size: 16px;
