@@ -3,12 +3,14 @@ import ProfileStats from '../components/ui/ProfileStats'
 import FeedCard from '../components/ui/FeedCard'
 import LiveVideoFeed from '../components/ui/LiveVideoFeed'
 import MostActiveUsers from '../components/ui/MostActiveUsers'
+import FollowSuggestion from '../components/ui/FollowSuggestion'
 
 const Feed = () => {
     return (
         <div style={{background:'#E5E5E5'}}>
             <div className="feed-body">
-                <div className="row">
+                <div className="row justify-content-end">
+                
                     <div className="col-lg-3 col-md-4 col-sm-12">
                         <ProfileStats/>
                         <br/>
@@ -36,6 +38,8 @@ const Feed = () => {
                         <div className="posts">
                             <FeedCard/>
                             <FeedCard/>
+                            <hr/>
+                            <FollowSuggestion/>
                             <hr/>
                             <FeedCard/>
                         </div>

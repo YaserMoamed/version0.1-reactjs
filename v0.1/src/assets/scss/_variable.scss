@@ -19,3 +19,9 @@ $green: #30BE76;
 @mixin for-big-desktop-up {
     @media (min-width: 1800px) { @content; }
 }
+@mixin custom($width) {
+    @media (max-width: $width) { @content; }
+}
+@mixin customInterval($width1,$width2) {
+    @media (min-width: $width1) and (max-width: $width2) { @content; }
+}
