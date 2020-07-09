@@ -25,3 +25,9 @@ $green: #30BE76;
 @mixin customInterval($width1,$width2) {
     @media (min-width: $width1) and (max-width: $width2) { @content; }
 }
+
+// button{
+//     &:focus {
+//         outline: none !important;
+//     }
+// }

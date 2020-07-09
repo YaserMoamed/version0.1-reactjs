@@ -1,0 +1,58 @@
+@import '../../../assets/scss/variable';
+
+.recipe-card{
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    max-width: 500px;
+    .food-image{
+        overflow: hidden;
+        border-radius: 8px 8px 0px 0px;
+        max-height: 200px;
+        img{
+            max-width: 100%;
+            object-fit: fill;
+        }
+    }
+    .body{
+        border-radius: 0px 0px 8px 8px;
+        background-color: #fff;
+        .name{
+            p{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 32px;
+                color: #030F09;
+                padding: 10px 5%;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+        }
+        .card-footer{
+            border: none;
+            background-color: #fff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0px 0px 8px 8px;
+            .dot{
+                color:#979797;
+                margin: 0px 5px;
+            }
+            button{
+                padding: 4px 12px;
+                background: #fff;
+                color: #30be76;
+                border: 1px solid #30be76;
+                border-radius: 4px;
+    
+                span{
+                    margin-right: 8px;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    
+}
