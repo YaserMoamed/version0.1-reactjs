@@ -16,6 +16,9 @@ const Navbar = () => {
                 <div className="message">
                     <img src={require('../../../assets/img/mail.PNG')} alt="mail"/>
                 </div>
+                <div className="lang-icon">
+                <img src={require('../../../assets/img/lang.png')} alt="translate" />
+                </div>
                 <div className="user"><img src={require('../../../assets/img/user.jpg')} alt="user"/></div>
                 
             </div>

@@ -12,7 +12,9 @@ const FeedCard = () => {
                     <div className="box">
                         <div className="head">
                             <p>Save to</p>
-                            <button onClick={closeSave}><span className="cross1"></span><span className="cross2"></span></button>
+                            <button onClick={closeSave}>
+                            <span className="cross1"></span><span className="cross2"></span>
+                            </button>
                         </div>
                         <button className="options">Western</button>
                         <button className="options">Quick Lunch</button>

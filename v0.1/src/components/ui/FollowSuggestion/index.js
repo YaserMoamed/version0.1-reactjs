@@ -31,7 +31,8 @@ const FollowSuggestion = () => {
                 <div className="card-fs">
                     <div className="bg-image">
                         <img src={require('../../../assets/img/postImage.jpg')} alt="background"/>
-                        <div  className="userImage"><img src={require('../../../assets/img/user.jpg')} alt="user"/></div>
+                        <div  className="userImage"><img src={require('../../../assets/img/user.jpg')} alt="user"/>
+                        </div>
                     </div>
                     <div className="body">
                         <p className="name">Naomí Yepes</p>
@@ -50,7 +51,8 @@ const FollowSuggestion = () => {
                 <div className="card-fs">
                     <div className="bg-image">
                         <img src={require('../../../assets/img/postImage.jpg')} alt="background"/>
-                        <div  className="userImage"><img src={require('../../../assets/img/user.jpg')} alt="user"/></div>
+                        <div  className="userImage"><img src={require('../../../assets/img/user.jpg')} alt="user"/>
+                        </div>
                     </div>
                     <div className="body">
                         <p className="name">Nieek Bove</p>
