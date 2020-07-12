@@ -1,0 +1,110 @@
+.cookingModeExpanded{
+    max-height: 100vh;
+    font-family: $Font;
+    .head-options{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 15px 3%;
+        background: #E5E5E5;
+        div{
+            img{
+                width: 13px;
+                margin-right: 4px;
+                margin-top: -3px;
+            }
+            
+        }
+        .close{
+            
+            border: none;
+            background: none;
+            position: absolute;
+            left: 0;
+            .left{
+                position: absolute;
+                right: 55px;
+                top: 9px;
+                border: 1px solid #363837;
+                transform: rotate(-45deg);
+                width: 7px;
+                height: 2px;
+            }
+            .right{
+                position: absolute;
+                right: 55px;
+                top: 13px;
+                border: 1px solid #363837;
+                transform: rotate(45deg);
+                width: 7px;
+                height: 2px;
+            }
+            .text{
+                position: relative;
+                top: -3px;
+                left: 34px;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.4px;
+                color: #767676;
+                min-width: 100px;
+            }
+        }
+        div{
+            display: flex;
+            align-items: center;
+            p{
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 32px;
+                color: #030F09;
+                margin-bottom: 0px;
+                margin-right: 10px;
+            }
+            span{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.32px;
+                color: #30BE76;
+            }
+        }
+    }
+    .black-area{
+        background-color: black;
+        width: 100%;
+        p{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            padding: 15px 0;
+            color: #FFFFFF;
+            margin: 0;
+        }
+    }
+    .video-content{
+        margin-bottom: -9px;
+        // overflow: hidden;
+        // height: 65.5vh;
+        video{
+            width: 100%;
+            // height: 100%;
+        }
+    }
+    .black-area-2{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+            max-width: 534px;
+        }
+    }
+}

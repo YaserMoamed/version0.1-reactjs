@@ -1,0 +1,95 @@
+$border-radius: 20px;
+
+$primary: #d6d6d6;
+$base: #30BE76;
+$shadow-color:  #30BE76;
+$lighter-shadow: rgba($shadow-color, .2);
+$white: #fff;
+$gray: #d6d6d6;
+$lighter-gray: #d6d6d6;
+$time-line-width: 100%;
+$transition: .3s all ease;
+
+@mixin dragIndicator($property, $background, $z-index) {
+  #{$property}{
+      position: absolute;
+      top: 0;
+      z-index: $z-index;
+      width: 0;
+      height: 4px;
+      border-radius: 5px;
+      background: $background;
+      &:hover{
+        &::before{
+          opacity: 1;
+        }
+        &::after{
+          opacity: 1;
+        }
+      }
+      &::before{
+        opacity: 0;
+        content: attr(data-content);
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: -23px;
+        width: 40px;
+        padding: 3px;
+        text-align: center;
+        color: white;
+        background: $shadow-color;
+        border-radius: $border-radius;
+    }
+    &::after{
+      opacity: 0;
+      content:'';
+      display: block;
+      position: absolute;
+      top: -18px;
+      right: -8px;
+      border-top: 8px solid $shadow-color;
+      border-left:8px solid transparent;
+      border-right:8px solid transparent;
+    }
+    #{$property}-drag{
+      position: absolute;
+      right: -7.5px;
+      top: -6px;
+
+      width: 16px;
+      height: 16px;
+
+      border-radius: 50%;
+      background: $base;
+      transition: all .3s;
+      &:hover{
+        box-shadow: 0 0 0 6px $lighter-shadow;
+      }
+    }
+  }
+}
+
+.double-range-slider{
+    #slider{
+      position: relative;
+      margin: 0 auto;
+      width: $time-line-width;
+      height: 4px;
+      background: $primary;
+      border-radius: 5px;
+      cursor: pointer;
+      
+      @include dragIndicator("#min", $primary, 2);
+      @include dragIndicator("#max", $shadow-color, 1);
+    }
+  
+}
+
+
+
+
+
+
+
+

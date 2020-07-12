@@ -1,0 +1,22 @@
+@import '../../../assets/scss/variable';
+
+.search-page-recipe-card{
+    background: #fff;
+    max-width: 192px;
+    min-width: 135px;
+    width: 19%;
+
+    .card-img{
+        overflow: hidden;
+        width: 100%;
+        img{
+            object-fit: fill;
+            max-width: 100%;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 22px;
+        color: #030F09;
+    }
+}

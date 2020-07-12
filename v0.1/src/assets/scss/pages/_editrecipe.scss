@@ -1,0 +1,206 @@
+.edit-recipe{
+    font-family: $Font;
+    background: #E5E5E5;
+    padding: 20px 2%;
+    .left-img-upload{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: #fff;
+        height: 211px;
+        width: 100%;
+        margin-bottom: 20px;
+        button{
+            width: 80%;
+            padding: 3% 5px 3% 30px;
+            border: 0.8px dashed;
+            border-radius: 8px;
+            background-image: url('../../../assets/img/plus.png');
+            background-position: left;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 13%;
+            height: 186px;
+            max-width: 254px;
+            background-color: #fff;
+        }
+        
+    }
+    .box-1{
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 13px 3%;
+        .sub{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            
+            .box-1-head{
+                font-size: 14px;
+                line-height: 22px;
+                color: #A8A8A8;
+                
+            }
+            .sub1{
+                flex-basis: 39%;
+                margin-bottom: 30px;
+                @include custom(1023px){flex-basis: 100%;};
+            }
+            .sub2{
+                @include custom(1023px){margin-bottom: 20px;};
+
+                .save-options{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    @include custom(1023px){justify-content: space-around;};
+                    select{
+                        padding: 8.8px 14.5px;
+                        box-shadow: 0px 0px 14px #0000001c;
+                        border-radius: 8px;
+                        background: #fff;
+                        border: none;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .white-button{
+                        color: $green;
+                        border: 2px solid $green;
+                        border-radius: 8px;
+                        background: #fff;
+                        padding: 8.8px 14.5px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .green-button{
+                        background: $green;
+                        border: 2px solid $green;
+                        border-radius: 8px;
+                        color: #fff;
+                        padding: 8.8px 14.5px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid #CCCCCC;
+                padding: 7px;
+                width: 100%;
+            }
+        }
+        
+        .ingredients{
+            p{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: #030F09;
+            }                
+            input{
+                padding: 3% 5px 3% 30px;
+                border: 0.8px dashed;
+                border-radius: 8px;
+                background-image: url('../../../assets/img/plus.png');
+                background-position: left;
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position-x: 11px;
+                height: 35px;
+            }                    
+
+        }
+    }
+    .box-2{
+        padding: 13px 3%;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        p{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #030F09;
+        }
+        .sub{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .directions{
+                flex-basis: 45%;
+                @include custom(955px){
+                    flex-basis: 100%;
+                    input{
+                        
+                        height: 40px;
+                        margin-bottom: 10px;
+                    }
+                };
+            }
+            .video{
+                flex-basis: 45%;
+                @include custom(955px){
+                    flex-basis: 100%;
+                    input{
+                        
+                        height: 40px;
+                        margin-bottom: 10px;
+                    }
+                };
+            }
+        }
+        input{
+            width: 100%;
+            padding: 3% 5px 3% 30px;
+            border: 0.8px dashed;
+            border-radius: 8px;
+            background-image: url('../../../assets/img/plus.png');
+            background-position: left;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 11px;
+        }
+
+    }
+    .box-3{
+        padding: 13px 3%;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        span{
+            font-size: 14px;
+            line-height: 22px;
+            color: #A8A8A8;
+        }
+        p{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #030F09;
+        }
+        .details{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include custom(425px){flex-direction: column;};
+            div{
+                flex-basis: 45%;
+                margin-bottom: 20px;
+                span{
+                    min-width: 450px;
+                }
+            }
+        }
+        input{
+            @include custom(425px){width: auto;};
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #CCCCCC;
+            padding: 7px;
+            max-width: 305px;
+        }
+    }
+}
