@@ -26,8 +26,8 @@ $green: #30BE76;
     @media (min-width: $width1) and (max-width: $width2) { @content; }
 }
 
-// button{
-//     &:focus {
-//         outline: none !important;
-//     }
-// }
+button{
+    &:focus {
+        outline: none !important;
+    }
+}

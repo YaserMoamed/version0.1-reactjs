@@ -1,0 +1,865 @@
+.search{
+    font-family: $Font;
+    background-color: #E5E5E5;
+    min-height: 100vh;
+    padding: 35px 0%;
+    .search-filters{
+        padding: 21px 4%;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            p{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: #030F09;
+                margin-bottom: 0;
+            }
+            button{
+                position: relative;
+                border: none;
+                background-color: #fff;
+                .s1{
+                    position: absolute;
+                    right: 20.83%;
+                    top: 25%;
+                    width: 17px;
+                    border: 1px solid #30BE76;
+                }
+                .s2{
+                    position: absolute;
+                    right: 45.25%;
+                    height: 6px;
+                    top: 18.83%;
+                    border: 1px solid #30BE76;
+                }
+                .s3{
+                    position: absolute;
+                    right: 20.83%;
+                    top: 53.92%;
+                    width: 17px;
+                    border: 1px solid #30BE76;
+                }
+                .s4{
+                    position: absolute;
+                    right: 122.5%;
+                    top: 43.75%;
+                    height: 6px;
+                    border: 1px solid #30BE76;
+                }
+                .s5{
+                    position: absolute;
+                    right: 20.83%;
+                    top: 79.83%;
+                    width: 17px;
+                    border: 1px solid #30BE76;
+                }
+                .s6{
+                    position: absolute;
+                    right: 74.35%;
+                    top: 70.67%;
+                    height: 6px;
+                    border: 1px solid #30BE76;
+                }
+            }
+        }
+        .slider-selector{
+            margin: 20px 0px;
+            .slider-head{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                p{
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #030F09;
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: right;
+                    color: #A8A8A8;
+                }  
+            }
+            .custom-slide{
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                .front{
+                    .slider-front{
+                        position: absolute;
+                        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                        width: 100%; /* Specific width is required for Firefox. */
+                        background: transparent; /* Otherwise white in Chrome */
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                          }
+                          
+                          &:focus {
+                            outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                          }
+                          
+                          &::-ms-track {
+                            width: 100%;
+                            cursor: pointer;
+                          
+                            /* Hides the slider so custom styles can be added */
+                            background: transparent; 
+                            border-color: transparent;
+                            color: transparent;
+                          }
+            
+                          &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            overflow: hidden;
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                           
+                          }
+                          
+                          /* All the same stuff for Firefox */
+                          &::-moz-range-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                          
+                          /* All the same stuff for IE */
+                          &::-ms-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                          
+                    }
+                }
+                .back{
+                    .slider-back{
+                        position: absolute;
+                        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                        width: 100%; /* Specific width is required for Firefox. */
+                        background: transparent; /* Otherwise white in Chrome */
+                        overflow: hidden;
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                          }
+                          
+                          &:focus {
+                            outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                          }
+                          
+                          &::-ms-track {
+                            width: 100%;
+                            cursor: pointer;
+                          
+                            /* Hides the slider so custom styles can be added */
+                            background: transparent; 
+                            border-color: transparent;
+                            color: transparent;
+                          }
+            
+                          &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            overflow: hidden;
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                            box-shadow: 2500px 0px 0px 2500px rgb(214, 214, 214); /* Add cool effects to your sliders! */
+                           
+                          }
+                          
+                          /* All the same stuff for Firefox */
+                          &::-moz-range-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 2500px 0px 0px 2500px rgb(214, 214, 214);
+                          }
+                          
+                          /* All the same stuff for IE */
+                          &::-ms-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 2500px 0px 0px 2500px rgb(214, 214, 214);
+                          }
+                          &::-webkit-slider-runnable-track {
+                            width: 100%;
+                            height: 4px;
+                            cursor: pointer;
+                            background: $green;
+                            border-radius: 1.3px;
+                            border: 0.2px solid $green;
+                          }
+                          
+                          &:focus::-webkit-slider-runnable-track {
+                            background: $green;
+                          }
+                          
+                          &::-moz-range-track {
+                            width: 100%;
+                            height: 4px;
+                            cursor: pointer;
+                            background: $green;
+                            border-radius: 1.3px;
+                            border: 0.2px solid $green;
+                          }
+                          
+                          &::-ms-track {
+                            width: 100%;
+                            height: 4px;
+                            cursor: pointer;
+                            background: $green;
+                            border-radius: 1.3px;
+                            border: 0.2px solid $green;
+                          }
+                          &::-ms-fill-lower {
+                            background: $green;
+                            border: 0.2px solid $green;
+                            border-radius: 2.6px;
+                            box-shadow: 1px 1px 1px $green, 0px 0px 1px $green;
+                          }
+                          &:focus::-ms-fill-lower {
+                            background: $green;
+                          }
+                          &::-ms-fill-upper {
+                            background: #d1d1d1;
+                            border: 0.2px solid #c2c2c2;
+                            border-radius: 2.6px;
+                            box-shadow: 1px 1px 1px #c7c7c7, 0px 0px 1px #cacaca;
+                          }
+                          &:focus::-ms-fill-upper {
+                            background: #c7c7c7;
+                          }
+                    }
+                }
+            }
+            .double-slider{
+                
+                position: relative;
+                .first-front{
+                    position: absolute;
+                        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                        width: 100%; /* Specific width is required for Firefox. */
+                        background: transparent; /* Otherwise white in Chrome */
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                          }
+                          
+                          &:focus {
+                            outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                          }
+                          
+                          &::-ms-track {
+                            width: 100%;
+                            cursor: pointer;
+                          
+                            /* Hides the slider so custom styles can be added */
+                            background: transparent; 
+                            border-color: transparent;
+                            color: transparent;
+                          }
+            
+                          &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            overflow: hidden;
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                           
+                          }
+                          
+                          /* All the same stuff for Firefox */
+                          &::-moz-range-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                          
+                          /* All the same stuff for IE */
+                          &::-ms-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                }
+                .first-back{
+                    
+                    position: absolute;
+                    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                    width: 100%; /* Specific width is required for Firefox. */
+                    background: transparent; /* Otherwise white in Chrome */
+                    overflow: hidden;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                      }
+                      
+                      &:focus {
+                        outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                      }
+                      
+                      &::-ms-track {
+                        width: 100%;
+                        cursor: pointer;
+                      
+                        /* Hides the slider so custom styles can be added */
+                        background: transparent; 
+                        border-color: transparent;
+                        color: transparent;
+                      }
+        
+                      &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        overflow: hidden;
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                        box-shadow: 2500px 0px 0px 2500px $green; /* Add cool effects to your sliders! */
+                       
+                      }
+                      
+                      /* All the same stuff for Firefox */
+                      &::-moz-range-thumb {
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        box-shadow: 2500px 0px 0px 2500px $green;
+                      }
+                      
+                      /* All the same stuff for IE */
+                      &::-ms-thumb {
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        box-shadow: 2500px 0px 0px 2500px $green;
+                      }
+                      &::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: rgb(214, 214, 214);
+                        border-radius: 1.3px;
+                        border: 0.2px solid rgb(214, 214, 214);
+                      }
+                      
+                      &:focus::-webkit-slider-runnable-track {
+                        background: rgb(214, 214, 214);
+                      }
+                      
+                      &::-moz-range-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: $green;
+                        border-radius: 1.3px;
+                        border: 0.2px solid $green;
+                      }
+                      
+                      &::-ms-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: $green;
+                        border-radius: 1.3px;
+                        border: 0.2px solid $green;
+                      }
+                      &::-ms-fill-lower {
+                        background: $green;
+                        border: 0.2px solid $green;
+                        border-radius: 2.6px;
+                        box-shadow: 1px 1px 1px $green, 0px 0px 1px $green;
+                      }
+                      &:focus::-ms-fill-lower {
+                        background: $green;
+                      }
+                      &::-ms-fill-upper {
+                        background: #d1d1d1;
+                        border: 0.2px solid #c2c2c2;
+                        border-radius: 2.6px;
+                        box-shadow: 1px 1px 1px #c7c7c7, 0px 0px 1px #cacaca;
+                      }
+                      &:focus::-ms-fill-upper {
+                        background: #c7c7c7;
+                      }
+                }
+                .second-front{
+                    position: absolute;
+                        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                        width: 100%; /* Specific width is required for Firefox. */
+                        background: transparent; /* Otherwise white in Chrome */
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                          }
+                          
+                          &:focus {
+                            outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                          }
+                          
+                          &::-ms-track {
+                            width: 100%;
+                            cursor: pointer;
+                          
+                            /* Hides the slider so custom styles can be added */
+                            background: transparent; 
+                            border-color: transparent;
+                            color: transparent;
+                          }
+            
+                          &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            overflow: hidden;
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                           
+                          }
+                          
+                          /* All the same stuff for Firefox */
+                          &::-moz-range-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                          
+                          /* All the same stuff for IE */
+                          &::-ms-thumb {
+                            border: 1px solid $green;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 8px;
+                            background: $green;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 1px $green;
+                          }
+                }
+                .second-back{
+                    position: absolute;
+                    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+                    width: 100%; /* Specific width is required for Firefox. */
+                    background: transparent; /* Otherwise white in Chrome */
+                    overflow: hidden;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                      }
+                      
+                      &:focus {
+                        outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+                      }
+                      
+                      &::-ms-track {
+                        width: 100%;
+                        cursor: pointer;
+                      
+                        /* Hides the slider so custom styles can be added */
+                        background: transparent; 
+                        border-color: transparent;
+                        color: transparent;
+                      }
+        
+                      &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        overflow: hidden;
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+                        box-shadow: -2500px 0px 0px 2500px $green; /* Add cool effects to your sliders! */
+                       
+                      }
+                      
+                      /* All the same stuff for Firefox */
+                      &::-moz-range-thumb {
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        box-shadow: 2500px 0px 0px 2500px $green;
+                      }
+                      
+                      /* All the same stuff for IE */
+                      &::-ms-thumb {
+                        border: 1px solid $green;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        background: $green;
+                        cursor: pointer;
+                        box-shadow: 2500px 0px 0px 2500px $green;
+                      }
+                      &::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: rgb(214, 214, 214);
+                        border-radius: 1.3px;
+                        border: 0.2px solid rgb(214, 214, 214);
+                      }
+                      
+                      &:focus::-webkit-slider-runnable-track {
+                        background: rgb(214, 214, 214);
+                      }
+                      
+                      &::-moz-range-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: $green;
+                        border-radius: 1.3px;
+                        border: 0.2px solid $green;
+                      }
+                      
+                      &::-ms-track {
+                        width: 100%;
+                        height: 4px;
+                        cursor: pointer;
+                        background: $green;
+                        border-radius: 1.3px;
+                        border: 0.2px solid $green;
+                      }
+                      &::-ms-fill-lower {
+                        background: $green;
+                        border: 0.2px solid $green;
+                        border-radius: 2.6px;
+                        box-shadow: 1px 1px 1px $green, 0px 0px 1px $green;
+                      }
+                      &:focus::-ms-fill-lower {
+                        background: $green;
+                      }
+                      &::-ms-fill-upper {
+                        background: #d1d1d1;
+                        border: 0.2px solid #c2c2c2;
+                        border-radius: 2.6px;
+                        box-shadow: 1px 1px 1px #c7c7c7, 0px 0px 1px #cacaca;
+                      }
+                      &:focus::-ms-fill-upper {
+                        background: #c7c7c7;
+                      }
+                }
+            }
+            
+
+        }
+        .checkbox-search{
+            margin-top: 10px;
+            span{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                color: #030F09;
+                
+                
+            }
+            .options{
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                input{
+                    display: none;
+                }
+                
+                label{
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    border: 1px solid $green;
+                    border-radius: 16px;
+                    padding: 4px;
+                    margin-right: 10px;
+
+                    cursor: pointer;
+                    color: $green;
+                    background-color: #fff;
+                    
+                    
+                }
+                :before + label{
+                    
+                }
+                :checked + label{
+                    color: #fff;
+                    background-color: $green;
+                }
+            }
+        }
+        .filter-button{
+            text-align: center;
+            margin-top:10px;
+            .green-button{
+                background: $green;
+                border: 2px solid $green;
+                border-radius: 8px;
+                color: #fff;
+                padding: 8.8px 14.5px;
+                margin-bottom: 10px;
+                width: 95%;
+            }
+        }
+        
+
+    }
+    .right{
+        background: #fff;
+        padding: 20px 2%;
+        border-radius: 8px;
+        .trending{
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .head{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #030F09;
+                }
+                .link{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.32px;
+                    color: #30BE76;
+                }
+            }
+            .trending-recipe{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+            }
+        }
+        .classify{
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+                @include custom(382px){ flex-direction: column; align-items: center;};
+
+                .head{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #030F09;
+                }
+                .link{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.32px;
+                    color: #30BE76;
+                }
+            }
+            
+            .categories{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                @include custom(768px){
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    scroll-behavior: smooth;
+                }
+                .bottom-line{
+                    width: 100%;
+                    border: 1px solid #E6E6E6;
+                    position: absolute;
+                    bottom: 6px;
+                }
+                input[type="checkbox"][id^="ingredients"] {
+                    display: none;
+                }
+                input{
+                    display: none;
+                }
+                
+                label{
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #030F09;
+                    mix-blend-mode: normal;
+                    opacity: 0.3;
+
+                    @include custom(767px){
+                        margin-right: 20px;
+                    }
+                    cursor: pointer;
+                    color: #030F09;
+                    
+                }
+                :before + label{
+                    
+                }
+                :checked + label{
+                    opacity: 1;
+                    border-bottom: 4px solid $green;
+                }
+            }
+            .trending-recipe{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 25px;
+            }
+        }
+        .suggestions{
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .head{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #030F09;
+                }
+                .link{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.32px;
+                    color: #30BE76;
+                }
+            }
+            .categories{
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+                overflow-x: scroll;
+                scroll-behavior: smooth;
+            }
+            .trending-recipe{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+            }
+            .cards-fs{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                .card-fs{
+                    border-radius: 8px;
+                    max-width: 22%;
+                    @include custom(786px){max-width: 155px;}
+                    .bg-image{
+                        position: relative;
+                        justify-content: center;
+                        display: flex;
+                        img{
+                            max-width: 100%;
+                        }
+                        .userImage{
+                            position: absolute;
+                            bottom: -25px;
+                            img{
+                                max-height: 70px;
+                                border: 5px solid #fff;
+                                border-radius: 40px;
+                                max-width: 100%;
+                            }
+                            
+                        }
+                    }
+                    .body{
+                        padding:23px 11%;
+                        .name{
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            color: #030F09;
+                            
+                        }
+                        .stats{
+                            display: flex;
+                            justify-content: space-between;
+                            @include custom('350px'){ flex-direction: column;}
+                            .count{
+                                font-size: 14px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #030F09;
+                                margin-bottom: 0;
+                            }
+                            .field{
+                                font-size: 10px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #030F09;
+                                mix-blend-mode: normal;
+                                opacity: 0.6;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
