@@ -7,6 +7,7 @@ import MyProfile from './pages/MyProfile'
 import OtherProfile from './pages/OtherProfile'
 import Search from './pages/Search'
 import EditRecipe from './pages/EditRecipe'
+import EditRecipe1 from './pages/EditRecipe1'
 import PreviewRecipe from './pages/PreviewRecipe'
 import CookingMode from './pages/CookingMode'
 import { BrowserRouter , Switch, Route} from 'react-router-dom';
@@ -25,6 +26,7 @@ class App extends React.Component {
           <Route path="/otherprofile" component={OtherProfile} />
           <Route path="/search" component={Search} />
           <Route path="/editrecipe" component={EditRecipe} />
+          <Route path="/editrecipe1" component={EditRecipe1} />
           <Route path="/previewrecipe" component={PreviewRecipe} />
           <Route path="/cookingmode" component={CookingMode} />
           <Route path="/cookingmodeexpanded" component={CookingModeExpanded} />

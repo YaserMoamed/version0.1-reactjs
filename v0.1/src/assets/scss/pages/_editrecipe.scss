@@ -189,18 +189,20 @@
             div{
                 flex-basis: 45%;
                 margin-bottom: 20px;
+
+                display: flex;
+                align-items: baseline;
                 span{
-                    min-width: 450px;
+                    min-width: 100px;
                 }
             }
         }
         input{
-            @include custom(425px){width: auto;};
+            // @include custom(425px){width: auto;};
             width: 100%;
             border: none;
             border-bottom: 1px solid #CCCCCC;
             padding: 7px;
-            max-width: 305px;
         }
     }
 }
